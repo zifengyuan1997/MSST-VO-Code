@@ -1,0 +1,5 @@
+
+# KITTI
+# VOD
+
+datasetUsed = 'KITTI'
