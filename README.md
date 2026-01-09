@@ -28,7 +28,7 @@ optimizer = torch.optim.Adam(M_deepvo.parameters(), lr=0.0001, betas=(0.9, 0.999
 scheduler = ReduceLROnPlateau(optimizer, 'min', 0.5, 5, verbose=True)
 ```
 
-Add the ollowing codes in ```main.py``` of [DeepVO](https://github.com/ChiWeiHsiao/DeepVO-pytorch) project before saving the model:
+Add the following codes in ```main.py``` of [DeepVO](https://github.com/ChiWeiHsiao/DeepVO-pytorch) project before saving the model:
 ```python
 scheduler.step(v_ls)
 ```
